@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   	<modelVersion>4.0.0</modelVersion>
   	<groupId>org.opoo.press.site</groupId>
-	<artifactId>my-opoopress-com-site</artifactId>
+	<artifactId>my-opoopress-site</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>My OpooPress.com site</name>
@@ -112,6 +112,8 @@
     	</profile>
 	</profiles>
 
+	<!-- for snapshots -->
+	<!--
 	<repositories>
 		<repository>
 			<id>sonatype-nexus-snapshots</id>
@@ -139,12 +141,13 @@
 			</snapshots>
 		</pluginRepository>
   	</pluginRepositories>
+	-->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.test.skip>true</maven.test.skip>
 		<project.build.sourceVersion>1.6</project.build.sourceVersion>
         <project.build.targetVersion>1.6</project.build.targetVersion>
-        <opoopress.version>1.0-SNAPSHOT</opoopress.version>
+        <opoopress.version>1.0.0</opoopress.version>
 	</properties>
 </project>
