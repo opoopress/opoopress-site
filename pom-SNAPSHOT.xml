@@ -33,6 +33,11 @@
 				<version>${opoopress.version}</version>
 			</extension>
 			<extension>
+				<groupId>org.opoo.press.maven.wagon</groupId>
+				<artifactId>opoopress-wagon-github</artifactId>
+				<version>${opoopress.version}</version>
+			</extension>
+			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-ftp</artifactId>
 				<version>2.4</version>
