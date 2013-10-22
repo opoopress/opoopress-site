@@ -28,14 +28,34 @@
   	<build>
 		<extensions>
 			<extension>
-				<groupId>org.opoo.press.maven.plugins</groupId>
-				<artifactId>opoopress-maven-plugin</artifactId>
+				<groupId>org.opoo.press.maven.wagon</groupId>
+				<artifactId>opoopress-wagon-git</artifactId>
+				<version>${opoopress.version}</version>
+			</extension>
+			<extension>
+				<groupId>org.opoo.press.maven.wagon</groupId>
+				<artifactId>opoopress-wagon-github</artifactId>
 				<version>${opoopress.version}</version>
 			</extension>
 			<extension>
 				<groupId>org.apache.maven.wagon</groupId>
 				<artifactId>wagon-ftp</artifactId>
 				<version>2.4</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-scm</artifactId>
+				<version>2.4</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.scm</groupId>
+				<artifactId>maven-scm-manager-plexus</artifactId>
+				<version>1.5</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.scm</groupId>
+				<artifactId>maven-scm-provider-gitexe</artifactId>
+				<version>1.5</version>
 			</extension>
 		</extensions>
   	    
@@ -105,6 +125,21 @@
 								<artifactId>wagon-ssh</artifactId>
 								<version>2.4</version>
 							</dependency>
+							<dependency>
+								<groupId>org.apache.maven.wagon</groupId>
+								<artifactId>wagon-scm</artifactId>
+								<version>2.4</version>
+							</dependency>
+							<dependency>
+								<groupId>org.apache.maven.scm</groupId>
+								<artifactId>maven-scm-manager-plexus</artifactId>
+								<version>1.5</version>
+							</dependency>
+							<dependency>
+								<groupId>org.apache.maven.scm</groupId>
+								<artifactId>maven-scm-provider-gitexe</artifactId>
+								<version>1.5</version>
+							</dependency>
 						</dependencies>
 		   			</plugin>
 		   		</plugins>
@@ -148,6 +183,6 @@
 		<maven.test.skip>true</maven.test.skip>
 		<project.build.sourceVersion>1.6</project.build.sourceVersion>
         <project.build.targetVersion>1.6</project.build.targetVersion>
-        <opoopress.version>1.0.1</opoopress.version>
+        <opoopress.version>1.0.2</opoopress.version>
 	</properties>
 </project>
