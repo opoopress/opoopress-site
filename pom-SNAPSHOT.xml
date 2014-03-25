@@ -9,7 +9,7 @@
 	<name>My OpooPress.com site</name>
 	<description>Just another OpooPress.com blog/site.</description>
 	<url>http://www.opoopress.com/</url>
-	<inceptionYear>2013</inceptionYear>
+	<inceptionYear>2014</inceptionYear>
 
     <dependencies>
 		<dependency>
@@ -181,6 +181,6 @@
 		<maven.test.skip>true</maven.test.skip>
 		<project.build.sourceVersion>1.6</project.build.sourceVersion>
         <project.build.targetVersion>1.6</project.build.targetVersion>
-        <opoopress.version>1.0.3-SNAPSHOT</opoopress.version>
+        <opoopress.version>1.1.1-SNAPSHOT</opoopress.version>
 	</properties>
 </project>
